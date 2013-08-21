@@ -15,10 +15,10 @@
             border: 1px dashed #eee;
             min-height: 1em; /* Empty elements are collapsed in Firefox */
         }
-        .canvas {
+        .output {
             margin-top: 24px;
         }
-        .canvas * {
+        .output * {
             display: block;
             margin: 0;
             padding: 0;
@@ -30,13 +30,13 @@
             border: 0;
             text-decoration: none;
         }
-        .canvas * * {
+        .output * * {
             margin-left: 1.5em;
         }
     </style>
 </head><body>
     <div class="input" contenteditable></div>
-    <div class="canvas">
+    <div class="output">
             <h1 class="header">&lt;h1 class="header"&gt;&lt;/h1&gt;</h1>
             <p class="content intro">&lt;p class="content intro"&gt;
                 <em class="comment">&lt;em class="comment"&gt;&lt;/em&gt;</em>
@@ -62,9 +62,8 @@
         });
         function update () {
             var selector = input[textProp].replace(/\s+/g, ' ').trim();
-            console.log(selector);
             if (selector) {
-                css[textProp] = '.canvas ' + selector + ' { background: #e6e6e6; outline: 1px solid #f9f9f9; }';
+                css[textProp] = '.output ' + selector + ' { background: #e6e6e6; outline: 1px solid #f9f9f9; }';
             } else {
                 css[textProp] = '/**/';
             }
