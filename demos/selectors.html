@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>CSS Selectors</title>
+    <style>
+        body {
+            font-family: monospace;
+            margin: 24px;
+            background: #f9f9f9;
+            font-size: 36px;
+        }
+        .input {
+            outline: 0;
+            color: #333;
+            border: 1px dashed #eee;
+            min-height: 1em; /* Empty elements are collapsed in Firefox */
+        }
+        .canvas {
+            margin-top: 24px;
+        }
+        .canvas * {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 100%;
+            color: #333;
+            cursor: default;
+            border: 0;
+            text-decoration: none;
+        }
+    </style>
+</head><body>
+    <div class="input" contenteditable></div>
+    <div class="canvas">
+            <h1 class="header">&lt;h1 class="header"&gt;&lt;/h1&gt;</h1>
+            <p class="content intro">&lt;p class="content intro"&gt;<br>
+                &nbsp;&nbsp;<em class="comment">&lt;em class="comment"&gt;&lt;/em&gt;</em><br>
+            &lt;/p&gt;</p>
+            <p class="content">&lt;p class="content"&gt;<br>
+                &nbsp;&nbsp;<a href="http://tp.mail.ru" onclick="return false;">&lt;a href="http://tp.mail.ru"&gt;&lt;/a&gt;</a><br>
+            &lt;/p&gt;</p>
+            <div id="footer">&lt;div id="footer"&gt;<br>
+                <p>&nbsp;&nbsp;&lt;p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<em>&lt;em&gt;&lt;/em&gt;</em><br>
+                &nbsp;&nbsp;&lt;/p&gt;</p>
+            &lt;/div&gt;</div>
+    </div>
+    <script>
+        var css = document.createElement('style');
+        document.body.appendChild(css);
+        var input = document.querySelector('.input'),
+            textProp = 'innerText' in input ? 'innerText' : 'textContent';
+        input.addEventListener('keydown', function (e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+            }
+        });
+        function update () {
+            var selector = input[textProp].replace(/\s+/g, ' ').trim();
+            console.log(selector);
+            if (selector) {
+                css[textProp] = '.canvas ' + selector + ' { background: #e6e6e6; outline: 1px solid #f9f9f9; }';
+            } else {
+                css[textProp] = '/**/';
+            }
+        }
+        input.addEventListener('input', update);
+        input.focus();
+        update();
+    </script>
+</body></html>

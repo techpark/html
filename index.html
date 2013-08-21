@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title>HTML &amp; CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+    <header class="caption">
+        <h1>HTML &amp; CSS</h1>
+        <p>Курс лекций технопарка по клиентским технологиям.</p>
+    </header>
+
+    <section class="slide"><div>
+        <h2>DOCTYPE</h2>
+        <h3>HTML 4</h3>
+        <!-- <p><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</code></p> -->
+        <p><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></p>
+        <h3>HTML 5</h3>
+        <p><code>&lt;!DOCTYPE HTML&gt;</code></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Теги и атрибуты</h2>
+        <pre>
+            <code>&lt;тег атрибут1="значение" атрибут2="значение"&gt;</code>
+            <code>&lt;тег атрибут1="значение" атрибут2="значение"&gt;...&lt;/тег&gt;</code>
+            <code>&lt;тег атрибут1="значение" атрибут2&gt;</code>
+            <code>&lt;!-- комментарий --&gt;</code>
+        </pre>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Типы тегов</h2>
+        <ol>
+            <li>Теги верхнего уровня</li>
+            <li>Теги заголовка документа</li>
+            <li>Комментарии</li>
+            <li>Блочные элементы</li>
+            <li>Строчные элементы</li>
+            <li>Списки</li>
+            <li>Таблицы</li>
+            <li>Формы</li>
+        </ol>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Блочные элементы</h2>
+        <pre>
+            <code>&lt;h1&gt;Заголовки&lt;/h1&gt;</code>
+            <code>&lt;p&gt;Параграф&lt;/p&gt;</code>
+            <code>&lt;div&gt;Универсальный блочный&lt;/div&gt;</code>
+            <code>Горизонтальная линия &lt;hr&gt;</code>
+        </pre>
+        <p class="note">
+            <a href="demos/blocks.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Строчные элементы</h2>
+        <pre>
+            <code>&lt;a href="http://mail.ru"&gt;Текст ссылки&lt;/a&gt;</code>
+            <code>Перевод&lt;br&gt;строки</code>
+            <code>&lt;em&gt;<em>Акцент</em>&lt;/em&gt; и &lt;strong&gt;<strong>строгий акцент</strong>&lt;/strong&gt;</code>
+            <code>&lt;span&gt;Универсальный строчный&lt;/span&gt;</code>
+            <code>&lt;img src="pictures/logo.png" alt="Логотип"&gt;</code>
+            <code>&lt;sub&gt;Нижний&lt;/sub&gt; и &lt;sup&gt;верхний&lt;/sup&gt; регистры</code>
+        </pre>
+        <p class="note">
+            <a href="demos/inlines.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Списки</h2>
+        <pre>
+            <code>&lt;ul&gt;Нумерованный список&lt;/ul&gt; <mark class="comment">&lt;!-- Unordered List --&gt;</mark></code>
+            <code>&lt;ol&gt;Маркированный список&lt;/ol&gt; <mark class="comment">&lt;!-- Ordered List --&gt;</mark></code>
+            <code>&lt;dl&gt;Список определений&lt;/dl&gt; <mark class="comment">&lt;!-- Description List --&gt;</mark></code>
+        </pre>
+        <p class="note">
+            <a href="demos/lists.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Таблицы</h2>
+        <pre>
+            <code>&lt;table&gt;</code>
+            <code>    &lt;tr&gt;&lt;th&gt;Заголовок&lt;/th&gt;&lt;/tr&gt;</code>
+            <code>    &lt;tr&gt;&lt;td&gt;Данные&lt;/td&gt;&lt;/tr&gt;</code>
+            <code>&lt;/table&gt;</code>
+        </pre>
+        <p class="note">
+            <a href="demos/tables.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Формы</h2>
+        <pre>
+            <code>&lt;form&gt;</code>
+            <code>    &lt;input type="text" name="login" value=""&gt;</code>
+            <code>    &lt;input type="password" name="password"&gt;</code>
+            <code>    &lt;button type="submit"&gt;Войти&lt;/button&gt;</code>
+            <code>&lt;/form&gt;</code>
+        </pre>
+        <p class="note">
+            <a href="demos/forms.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Стилизация элементов</h2>
+        <pre>
+            <code>&lt;p style="color: red"&gt;<span style="color: red">Красный</span>&lt;/p&gt;</code>
+            <code>&lt;p style="font-style: italic"&gt;<span style="font-style: italic">Курсив</span>&lt;/p&gt;</code>
+        </pre>
+        <p class="note">
+            <a href="demos/styles.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+
+    <section class="slide"><div>
+        <h2>CSS (Cascading Style Sheets)</h2>
+        <ol>
+            <li>Разграничение кода и оформления</li>
+            <li>Разное оформление для разных устройств</li>
+        </ol>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Подключений стилей</h2>
+        <pre>
+            <code>&lt;link rel="stylesheet" href="имя файла"&gt;</code>
+            <code>&lt;style&gt;</code>
+            <code>    <mark class="comment">/* объявление стилей */</mark></code>
+            <code>    @import "имя файла";</code>
+            <code>    @import url("имя файла");</code>
+            <code>&lt;/style&gt;</code>
+        </pre>
+        <p class="note">
+            <a href="demos/css.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Базовый синтаксис CSS</h2>
+        <pre>
+            <code>селектор {</code>
+            <code>    свойство1: значение1; <mark class="comment">/* комментарий */</mark></code>
+            <code>    свойство2: значение2;</code>
+            <code>}</code>
+        </pre>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Типы значений</h2>
+        <pre>
+            <code>url("http://mail.ru/") <mark class="comment">/* строки и адреса */</mark></code>
+            <code>0.7 <mark class="comment">/* числа */</mark></code>
+            <code>90% <mark class="comment">/* проценты */</mark></code>
+            <code>#ff0000 <mark class="comment">/* цвет */</mark></code>
+            <code>rgb(255, 0, 0) <mark class="comment">/* цвет */</mark></code>
+            <code>uppercase <mark class="comment">/* ключевые слова */</mark></code>
+        </pre>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Относительные единицы</h2>
+        <pre>
+            <code>24px <mark class="comment">/* пиксели */</mark></code>
+            <code>2em <mark class="comment">/* масштабируемая */</mark></code>
+            <code>150% <mark class="comment">/* проценты */</mark></code>
+            <code>3ex <mark class="comment">/* высота символа x */</mark></code>
+        </pre>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Базовые селекторы</h2>
+        <pre>
+            <code>тег {} <mark class="comment">/* &lt;тег&gt;&lt;/тег&gt; */</mark></code>
+            <code>тег.класс {} <mark class="comment">/* &lt;тег class="класс"&gt;&lt;/тег&gt; */</mark></code>
+            <code>.класс {}</code>
+            <code>.класс1.класс2 {} <mark class="comment">/* &lt;тег class="класс1 класс2"&gt;&lt;/тег&gt; */</mark></code>
+            <code>#идентификатор {} <mark class="comment">/* &lt;тег id="идентификатор"&gt;&lt;/тег&gt; */</mark></code>
+        </pre>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Cелекторы атрибутов</h2>
+        <pre>
+            <code>[атрибут] {} <mark class="comment">/* &lt;тег атрибут&gt;&lt;/тег&gt; */</mark></code>
+            <code>селектор[атрибут]{}</code>
+            <code>[атрибут="значение"] {} <mark class="comment">/* &lt;тег атрибут="значение"&gt;&lt;/тег&gt; */</mark></code>
+            <code>селектор[атрибут1="значение1"][атрибут2="значение2"] {}</code>
+        </pre>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Связь селекторов</h2>
+        <pre>
+            <code>селектор1 селектор2 {} <mark class="comment">/* &lt;тег1&gt; &lt;тег2&gt;&lt;/тег2&gt; &lt;/тег1&gt; */</mark></code>
+            <code>селектор1 > селектор2 {}</code>
+            <code>селектор1 + селектор2 {} <mark class="comment">/* &lt;тег1&gt; &lt;/тег1&gt; &lt;тег2&gt;&lt;/тег2&gt; */</mark></code>
+        </pre>
+        <p class="note">
+            <a href="demos/selectors.html">Демонстрация</a>.
+        </p>
+    </div></section>
+
+    <div class="progress"><div></div></div>
+    <script src="shower/shower.min.js"></script>
+</body>
+</html>
