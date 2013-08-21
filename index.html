@@ -25,9 +25,9 @@
     <section class="slide"><div>
         <h2>Теги и атрибуты</h2>
         <pre>
-            <code>&lt;тег атрибут1="значение" атрибут2="значение"&gt;</code>
+            <code>&lt;тег атрибут1="значение" атрибут2="значение"/&gt;</code>
             <code>&lt;тег атрибут1="значение" атрибут2="значение"&gt;...&lt;/тег&gt;</code>
-            <code>&lt;тег атрибут1="значение" атрибут2&gt;</code>
+            <code>&lt;тег атрибут1="значение" атрибут2/&gt;</code>
             <code>&lt;!-- комментарий --&gt;</code>
         </pre>
     </div></section>
@@ -75,6 +75,19 @@
     </div></section>
 
     <section class="slide"><div>
+        <h2>Спец. символы</h2>
+        <pre>
+            <code>&amp;nbsp; &lt;!-- неразрывный пробел --&gt;</code>
+            <code>&amp;quot; &lt;!-- &quot; --&gt;</code>
+            <code>&amp;lt; &lt;!-- &lt; --&gt;</code>
+            <code>&amp;gt; &lt;!-- &gt; --&gt;</code>
+        </pre>
+        <p class="note">
+            <a href="http://dev.w3.org/html5/html-author/charref">Справка</a>.
+        </p>
+    </div></section>
+
+    <section class="slide"><div>
         <h2>Списки</h2>
         <pre>
             <code>&lt;ul&gt;Нумерованный список&lt;/ul&gt; <mark class="comment">&lt;!-- Unordered List --&gt;</mark></code>
@@ -116,14 +129,13 @@
     <section class="slide"><div>
         <h2>Стилизация элементов</h2>
         <pre>
-            <code>&lt;p style="color: red"&gt;<span style="color: red">Красный</span>&lt;/p&gt;</code>
-            <code>&lt;p style="font-style: italic"&gt;<span style="font-style: italic">Курсив</span>&lt;/p&gt;</code>
+            <code>&lt;p style="color: red;"&gt;<span style="color: red;">Красный</span>&lt;/p&gt;</code>
+            <code>&lt;p style="font-style: italic;"&gt;<span style="font-style: italic;">Курсив</span>&lt;/p&gt;</code>
         </pre>
         <p class="note">
             <a href="demos/styles.html">Демонстрация</a>.
         </p>
     </div></section>
-
 
     <section class="slide"><div>
         <h2>CSS (Cascading Style Sheets)</h2>
@@ -189,7 +201,10 @@
             <code>.класс1.класс2 {} <mark class="comment">/* &lt;тег class="класс1 класс2"&gt;&lt;/тег&gt; */</mark></code>
             <code>#идентификатор {} <mark class="comment">/* &lt;тег id="идентификатор"&gt;&lt;/тег&gt; */</mark></code>
         </pre>
-    </div></section>
+       <p class="note">
+            <a href="demos/selectors.html">Демонстрация</a>.
+        </p>
+     </div></section>
 
     <section class="slide"><div>
         <h2>Cелекторы атрибутов</h2>
@@ -199,6 +214,9 @@
             <code>[атрибут="значение"] {} <mark class="comment">/* &lt;тег атрибут="значение"&gt;&lt;/тег&gt; */</mark></code>
             <code>селектор[атрибут1="значение1"][атрибут2="значение2"] {}</code>
         </pre>
+        <p class="note">
+            <a href="demos/selectors.html">Демонстрация</a>.
+        </p>
     </div></section>
 
     <section class="slide"><div>
@@ -212,6 +230,50 @@
             <a href="demos/selectors.html">Демонстрация</a>.
         </p>
     </div></section>
+
+    <section class="slide"><div>
+        <h2>Псевдо-классы</h2>
+        <pre>
+            <code><mark class="comment">/* селектор:псевдокласс {} */</mark></code>
+            <code>:active <mark class="comment">/* активный элемент */</mark></code>
+            <code>:link, :visited <mark class="comment">/* непосещенные и посещенные ссылки */</mark></code>
+            <code>:hover <mark class="comment">/* элемент, находится под указателем мышки */</mark></code>
+            <code>:focus <mark class="comment">/* элемент в фокусе */</mark></code>
+            <code>:first-child <mark class="comment">/* первый дочерний элемент */</mark></code>
+        </pre>
+        <p class="note">
+            <a href="demos/selectors.html">Демонстрация</a>.
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Свойства</h2>
+        <!-- TODO -->
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Каскадирование</h2>
+        <ol>
+            <li>Стиль браузера</li>
+            <li>Стиль автора</li>
+            <li>Стиль пользователя</li>
+            <li>Стиль автора с добавлением !important</li>
+            <li>Стиль пользователя с добавлением !important</li>
+        </ol>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>!important</h2>
+        <pre>
+            <code>свойство: значение !important;</code>
+        </pre>
+     </div></section>
+
+
+    <section class="slide"><div>
+        <h2>Специфичность</h2>
+        <!-- TODO -->
+     </div></section>
 
     <div class="progress"><div></div></div>
     <script src="shower/shower.min.js"></script>
