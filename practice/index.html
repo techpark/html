@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <title>Форма авторизации</title>
+    <link rel="stylesheet" href="index.css" />
+</head><body>
+    <div class="page">
+        <form method="post" class="form">
+            <h1 class="form__header">
+                Форма регистрации
+            </h1>
+            <div class="form__inner">
+                <div class="form__field">
+                    <label class="form__field-label form__field-label_required" for="first-name">Имя</label>
+                    <div class="form__field-input-ct">
+                        <input type="text" id="first-name" name="first-name" value="" class="form__field-input" />
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label class="form__field-label form__field-label_required" for="last-name">Фамилия</label>
+                    <div class="form__field-input-ct">
+                        <input type="text" id="last-name" name="last-name" value="" class="form__field-input" />
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label class="form__field-label form__field-label_required" for="email">E-mail</label>
+                    <div class="form__field-input-ct">
+                        <input type="email" id="email" name="email" value="" class="form__field-input" />
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label class="form__field-label form__field-label_required" for="password">Пароль</label>
+                    <div class="form__field-input-ct">
+                        <input type="password" id="password" name="password" value="" class="form__field-input" />
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="form__field-label">Пол</div>
+                    <div class="form__field-input-ct">
+                        <label class="form__field-input-label">
+                            <input type="radio" name="sex" value="male" class="form__field-input" />
+                            Мужский
+                        </label>
+                        <label class="form__field-input-label">
+                            <input type="radio" name="sex" value="female" class="form__field-input" />
+                            Женский
+                        </label>
+                        <label class="form__field-input-label">
+                            <input type="radio" name="sex" value="na" checked="checked" class="form__field-input" />
+                            Не указан
+                        </label>
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label class="form__field-label form__field-label_required" for="bd-month">Дата рождения</label>
+                    <div class="form__field-input-ct">
+                        <select id="bd-month" name="db-month" class="form__field-input">
+                            <option value="1">Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="4">Апрель</option>
+                            <option value="5">Май</option>
+                            <option value="6">Июнь</option>
+                            <option value="7">Июль</option>
+                            <option value="8">Август</option>
+                            <option value="9">Сентябр</option>
+                            <option value="10">Октябрь</option>
+                            <option value="11">Ноябрь</option>
+                            <option value="12">Декабрь</option>
+                        </select>
+                        <select id="bd-day" name="db-day" class="form__field-input">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form__footer">
+                <button type="submit" class="form__button">Зарегистрироваться</button>
+            </div>
+            <input type="hidden" name="action" value="register" />
+        </form>
+    </div>
+</body></html>

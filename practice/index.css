@@ -1,0 +1,28 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    background: #f9f9f9;
+    font-size: 18px;
+}
+
+.page {
+    margin: 100px auto;
+    width: 980px;
+}
+
+.form {
+    border: 1px solid red;
+}
+
+.form__inner {
+    display: table;
+}
+.form__field {
+    display: table-row;
+}
+.form__field-label {
+    display: table-cell;
+}
+.form__field-input-ct {
+    display: table-cell;
+}
