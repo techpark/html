@@ -148,16 +148,26 @@
     <section class="slide"><div>
         <h2>Подключений стилей</h2>
         <pre>
-            <code>&lt;link rel="stylesheet" href="имя файла"&gt;</code>
+            <code>&lt;link rel="stylesheet" href="имя файла" media="тип" /&gt;</code>
             <code>&lt;style&gt;</code>
             <code>    <mark class="comment">/* объявление стилей */</mark></code>
-            <code>    @import "имя файла";</code>
-            <code>    @import url("имя файла");</code>
+            <code>    @import "имя файла" тип;</code>
+            <code>    @import url("имя файла") тип;</code>
             <code>&lt;/style&gt;</code>
         </pre>
         <p class="note">
             <a href="demos/css.html">Демонстрация</a>.
         </p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Типы медиа</h2>
+        <ul>
+            <li>По умолчанию <code>all</code></li>
+            <li>Наладонники <code>handheld</code></li>
+            <li>Принтеры <code>print</code></li>
+            <li>Экран компьютера, смартфона, планшетника <code>screen</code></li>
+        </ul>
     </div></section>
 
     <section class="slide"><div>
@@ -220,7 +230,7 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2>Связь селекторов</h2>
+        <h2>Комбинаторы</h2>
         <pre>
             <code>селектор1 селектор2 {} <mark class="comment">/* &lt;тег1&gt; &lt;тег2&gt;&lt;/тег2&gt; &lt;/тег1&gt; */</mark></code>
             <code>селектор1 > селектор2 {}</code>
@@ -283,13 +293,97 @@
             <li>Цвет текста (<code>color</code>) и фон (<code>background</code>)</li>
             <li>Шрифт (<code>font</code>)</li>
             <li>Текст (<code>text-decoration</code>, <code>text-align</code>)</li>
+            <li>Отображение (<code>display</code>)</li>
             <li>Размеры (Box Model)</li>
             <li>Расположение (<code>position</code>, <code>float</code>)</li>
-            <li>Отображение (<code>display</code>)</li>
         </ul>
         <p class="note">
             <a href="http://www.w3.org/TR/CSS2/">Спецификация</a>.
         </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2><code>display</code></h2>
+        <ul>
+            <li>Блочный элемент <code>block</code></li>
+            <li>Строчный элемент <code>inline</code></li>
+            <li>Строчно-блочный элемент <code>inline-block</code></li>
+            <li>Скрытый (временно удаленный) <code>none</code></li>
+            <li>Элемент списка <code>none</code></li>
+            <li>Табличный элемент <code>table</code>, <code>inline-table</code>, <code>table-cell</code></li>
+        </ul>
+        <p class="note">
+            <a href="demos/display.html">Демонстрация</a>.<br/>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Box Model</h2>
+        <img src="pictures/box.png" alt="" style="margin: 0 auto; display: block;" />
+        <p class="note">
+            <a href="demos/box.html">Демонстрация</a>.<br/>
+            <a href="http://www.w3.org/TR/CSS2/box.html">http://www.w3.org/TR/CSS2/box.html</a>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Обтекание</h2>
+        <p>Свойство <code>float</code></p>
+        <ul>
+            <li>Отсуствует <code>none</code>
+            <li>Выравает по левому краю <code>left</code></li>
+            <li>Выравает по правому краю <code>left</code></li>
+        </ul>
+        <p class="note">
+            <a href="demos/display.html">Демонстрация</a>.<br/>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Позиционирование</h2>
+        <p>Свойство <code>position</code></p>
+        <ul>
+            <li>По умолчанию <code>static</code></li>
+            <li>Относительное <code>relative</code></li>
+            <li>Абсолютное <code>absolute</code></li>
+            <li>Фиксированое <code>fixed</code></li>
+        </ul>
+        <p class="note">
+            <a href="demos/display.html">Демонстрация</a>.<br/>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Псевдо-элементы</h2>
+        <p><code>::after</code> и <code>::befor</code></p>
+        <pre>
+            <code>селектор::after { content: "текст" }</code>
+        </pre>
+        <p class="note">
+            <a href="demos/display.html">Демонстрация</a>.<br/>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Waterfall</h2>
+        <img src="pictures/waterfall.png" alt="" style="margin: 0 auto; display: block;" />
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Независимые блоки</h2>
+        <p></p>
+        <p class="note">
+            <a href="http://vitaly.harisov.name/article/independent-blocks.html">http://vitaly.harisov.name/article/independent-blocks.html</a>.<br/>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Что не рассмотрено?</h2>
+        <ul>
+            <li>Мультимедия возможностии HTML</li>
+            <li>CSS3: анимации, транзишины, трансорфмации</li>
+            <li>Вендорные префиксы</li>
+        </ul>
      </div></section>
 
     <div class="progress"><div></div></div>
