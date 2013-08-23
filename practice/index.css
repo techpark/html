@@ -1,28 +1,69 @@
 body {
-    font-family: monospace;
     margin: 0;
-    background: #f9f9f9;
-    font-size: 18px;
+    background: #666;
+}
+
+body, input, select, button {
+    font: 18px/24px Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;;
+    color: #666;
 }
 
 .page {
     margin: 100px auto;
-    width: 980px;
+    width: 640px;
 }
 
 .form {
-    border: 1px solid red;
+    background: #accfcc;
+    border-bottom: 4px solid #70b4ae;
+    padding: 24px;
+}
+
+.form__header {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0 0 24px;
 }
 
 .form__inner {
     display: table;
+    width: 100%;
 }
 .form__field {
     display: table-row;
 }
-.form__field-label {
+.form__field-label, .form__field-input-ct {
     display: table-cell;
+    padding: 4px 0;
 }
-.form__field-input-ct {
-    display: table-cell;
+
+.form__field-label_required::after {
+    content: ' *';
+    color: #ff2d00;
+}
+
+.form__field-input {
+    box-sizing: border-box;
+    border: 2px solid #a3b5b9;
+    padding: 2px 4px;
+}
+.form__field-input_size_full {
+    width: 100%;
+}
+.form__field-input:focus {
+    background: #e5f7f0;
+}
+
+.form__footer {
+    margin-top: 24px;
+}
+.form__button {
+    border: 0;
+    border-bottom: 2px solid #d90000;
+    padding: 8px 12px;
+    color: #fff;
+    background: #ff2d00;
 }

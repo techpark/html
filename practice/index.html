@@ -7,25 +7,25 @@
     <div class="page">
         <form method="post" class="form">
             <h1 class="form__header">
-                Форма регистрации
+                Регистрация
             </h1>
             <div class="form__inner">
                 <div class="form__field">
                     <label class="form__field-label form__field-label_required" for="first-name">Имя</label>
                     <div class="form__field-input-ct">
-                        <input type="text" id="first-name" name="first-name" value="" class="form__field-input" />
+                        <input type="text" id="first-name" name="first-name" value="" class="form__field-input form__field-input_size_full" required="required" autofocus="autofocus" />
                     </div>
                 </div>
                 <div class="form__field">
                     <label class="form__field-label form__field-label_required" for="last-name">Фамилия</label>
                     <div class="form__field-input-ct">
-                        <input type="text" id="last-name" name="last-name" value="" class="form__field-input" />
+                        <input type="text" id="last-name" name="last-name" value="" class="form__field-input form__field-input_size_full" required="required" />
                     </div>
                 </div>
                 <div class="form__field">
                     <label class="form__field-label form__field-label_required" for="email">E-mail</label>
                     <div class="form__field-input-ct">
-                        <input type="email" id="email" name="email" value="" class="form__field-input" />
+                        <input type="email" id="email" name="email" value="" class="form__field-input form__field-input_size_full" required="required" />
                     </div>
                 </div>
                 <div class="form__field">
@@ -52,9 +52,10 @@
                     </div>
                 </div>
                 <div class="form__field">
-                    <label class="form__field-label form__field-label_required" for="bd-month">Дата рождения</label>
+                    <label class="form__field-label" for="bd-month">Дата рождения</label>
                     <div class="form__field-input-ct">
                         <select id="bd-month" name="db-month" class="form__field-input">
+                            <option value=""></option>
                             <option value="1">Январь</option>
                             <option value="2">Февраль</option>
                             <option value="3">Март</option>
@@ -69,6 +70,7 @@
                             <option value="12">Декабрь</option>
                         </select>
                         <select id="bd-day" name="db-day" class="form__field-input">
+                            <option></option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
