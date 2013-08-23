@@ -47,7 +47,6 @@ body, input, select, button {
 
 .form__field-input {
     box-sizing: border-box;
-    box-sizing: border-box;
     padding: 2px 4px;
 }
 .form__field-input_type_text {
