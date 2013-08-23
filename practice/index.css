@@ -40,6 +40,10 @@ body, input, select, button {
     padding: 4px 0;
 }
 
+.form__field-label, .form__field-input-label {
+    font-variant: small-caps
+}
+
 .form__field-label_required::after {
     content: ' *';
     color: #ff2d00;

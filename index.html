@@ -15,11 +15,14 @@
 
     <section class="slide"><div>
         <h2>DOCTYPE</h2>
-        <h3>HTML 4</h3>
-        <!-- <p><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</code></p> -->
-        <p><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></p>
-        <h3>HTML 5</h3>
-        <p><code>&lt;!DOCTYPE HTML&gt;</code></p>
+        <strong>HTML 4</strong>
+        <pre>
+            <code>&lt;!DOCTYPE HTML PUBLIC</code>
+            <code>    "-//W3C//DTD HTML 4.01 Transitional//EN"</code>
+            <code>    "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
+        </pre>
+        <strong>HTML 5</strong>
+        <pre><code>&lt;!DOCTYPE HTML&gt;</code></pre>
     </div></section>
 
     <section class="slide"><div>
@@ -27,7 +30,7 @@
         <pre>
             <code>&lt;тег атрибут1="значение" атрибут2="значение"/&gt;</code>
             <code>&lt;тег атрибут1="значение" атрибут2="значение"&gt;...&lt;/тег&gt;</code>
-            <code>&lt;тег атрибут1="значение" атрибут2/&gt;</code>
+            <code>&lt;тег атрибут1="значение" атрибут2 /&gt;</code>
             <code>&lt;!-- комментарий --&gt;</code>
         </pre>
     </div></section>
@@ -52,7 +55,7 @@
             <code>&lt;h1&gt;Заголовки&lt;/h1&gt;</code>
             <code>&lt;p&gt;Параграф&lt;/p&gt;</code>
             <code>&lt;div&gt;Универсальный блочный&lt;/div&gt;</code>
-            <code>Горизонтальная линия &lt;hr&gt;</code>
+            <code>Горизонтальная линия &lt;hr /&gt;</code>
         </pre>
         <p class="note">
             <a href="demos/blocks.html">Демонстрация</a>.
@@ -63,10 +66,10 @@
         <h2>Строчные элементы</h2>
         <pre>
             <code>&lt;a href="http://mail.ru"&gt;Текст ссылки&lt;/a&gt;</code>
-            <code>Перевод&lt;br&gt;строки</code>
+            <code>Перевод&lt;br/&gt;строки</code>
             <code>&lt;em&gt;<em>Акцент</em>&lt;/em&gt; и &lt;strong&gt;<strong>строгий акцент</strong>&lt;/strong&gt;</code>
             <code>&lt;span&gt;Универсальный строчный&lt;/span&gt;</code>
-            <code>&lt;img src="pictures/logo.png" alt="Логотип"&gt;</code>
+            <code>&lt;img src="pictures/logo.png" alt="Логотип" /&gt;</code>
             <code>&lt;sub&gt;Нижний&lt;/sub&gt; и &lt;sup&gt;верхний&lt;/sup&gt; регистры</code>
         </pre>
         <p class="note">
@@ -77,10 +80,10 @@
     <section class="slide"><div>
         <h2>Спец. символы</h2>
         <pre>
-            <code>&amp;nbsp; &lt;!-- неразрывный пробел --&gt;</code>
-            <code>&amp;quot; &lt;!-- &quot; --&gt;</code>
-            <code>&amp;lt; &lt;!-- &lt; --&gt;</code>
-            <code>&amp;gt; &lt;!-- &gt; --&gt;</code>
+            <code>&amp;nbsp; <mark class="comment">&lt;!-- неразрывный пробел --&gt;</mark></code>
+            <code>&amp;quot; <mark class="comment">&lt;!-- &quot; --&gt;</mark></code>
+            <code>&amp;lt; <mark class="comment">&lt;!-- &lt; --&gt;</mark></code>
+            <code>&amp;gt; <mark class="comment">&lt;!-- &gt; --&gt;</mark></code>
         </pre>
         <p class="note">
             <a href="http://dev.w3.org/html5/html-author/charref">Справка</a>.
@@ -116,8 +119,8 @@
         <h2>Формы</h2>
         <pre>
             <code>&lt;form&gt;</code>
-            <code>    &lt;input type="text" name="login" value=""&gt;</code>
-            <code>    &lt;input type="password" name="password"&gt;</code>
+            <code>    &lt;input type="text" name="login" value="" /&gt;</code>
+            <code>    &lt;input type="password" name="password" /&gt;</code>
             <code>    &lt;button type="submit"&gt;Войти&lt;/button&gt;</code>
             <code>&lt;/form&gt;</code>
         </pre>
@@ -128,21 +131,31 @@
 
     <section class="slide"><div>
         <h2>Стилизация элементов</h2>
+        <code>style</code>
         <pre>
-            <code>&lt;p style="color: red;"&gt;<span style="color: red;">Красный</span>&lt;/p&gt;</code>
-            <code>&lt;p style="font-style: italic;"&gt;<span style="font-style: italic;">Курсив</span>&lt;/p&gt;</code>
+            <code>&lt;p style="font-style: italic; color: red;"&gt;</code>
+            <code>    <span style="font-style: italic;  color: red;">Стилизованный текст.</span></code>
+            <code>&lt;/p&gt;</code>
         </pre>
+        <p>
+            <code>class</code>
+        </p>
         <p class="note">
             <a href="demos/styles.html">Демонстрация</a>.
         </p>
+
     </div></section>
 
     <section class="slide"><div>
         <h2>CSS (Cascading Style Sheets)</h2>
         <ol>
-            <li>Разграничение кода и оформления</li>
-            <li>Разное оформление для разных устройств</li>
+            <li>Разграничение кода и оформления.</li>
+            <li>Уменьшение трафика.</li>
+            <li>Оформление под различные устройства.</li>
         </ol>
+        <p class="note">
+            <a href="http://www.w3.org/TR/CSS2/">Спецификация</a>.
+        </p>
     </div></section>
 
     <section class="slide"><div>
@@ -162,12 +175,12 @@
 
     <section class="slide"><div>
         <h2>Типы медиа</h2>
-        <ul>
-            <li>По умолчанию <code>all</code></li>
-            <li>Наладонники <code>handheld</code></li>
-            <li>Принтеры <code>print</code></li>
-            <li>Экран компьютера, смартфона, планшетника <code>screen</code></li>
-        </ul>
+        <pre>
+            <code>all <mark class="comment">/* по умолчанию */</mark></code>
+            <code>screen <mark class="comment">/* компьютер, смартфон, планшетник */</mark></code>
+            <code>handheld <mark class="comment">/* КПК */</mark></code>
+            <code>print <mark class="comment">/* принтер */</mark></code>
+        </pre>
     </div></section>
 
     <section class="slide"><div>
@@ -196,7 +209,7 @@
         <h2>Относительные единицы</h2>
         <pre>
             <code>24px <mark class="comment">/* пиксели */</mark></code>
-            <code>2em <mark class="comment">/* масштабируемая */</mark></code>
+            <code>2em <mark class="comment">/* масштабируемая единица */</mark></code>
             <code>150% <mark class="comment">/* проценты */</mark></code>
             <code>3ex <mark class="comment">/* высота символа x */</mark></code>
         </pre>
@@ -219,9 +232,10 @@
     <section class="slide"><div>
         <h2>Cелекторы атрибутов</h2>
         <pre>
-            <code>[атрибут] {} <mark class="comment">/* &lt;тег атрибут&gt;&lt;/тег&gt; */</mark></code>
+            <code><mark class="comment">/* &lt;тег атрибут="значение"&gt;&lt;/тег&gt; */</mark></code>
+            <code>[атрибут] {}</mark></code>
             <code>селектор[атрибут]{}</code>
-            <code>[атрибут="значение"] {} <mark class="comment">/* &lt;тег атрибут="значение"&gt;&lt;/тег&gt; */</mark></code>
+            <code>[атрибут="значение"] {} <mark class="comment"></mark></code>
             <code>селектор[атрибут1="значение1"][атрибут2="значение2"] {}</code>
         </pre>
         <p class="note">
@@ -232,9 +246,9 @@
     <section class="slide"><div>
         <h2>Комбинаторы</h2>
         <pre>
-            <code>селектор1 селектор2 {} <mark class="comment">/* &lt;тег1&gt; &lt;тег2&gt;&lt;/тег2&gt; &lt;/тег1&gt; */</mark></code>
+            <code>селектор1 селектор2 {}</mark></code>
             <code>селектор1 > селектор2 {}</code>
-            <code>селектор1 + селектор2 {} <mark class="comment">/* &lt;тег1&gt; &lt;/тег1&gt; &lt;тег2&gt;&lt;/тег2&gt; */</mark></code>
+            <code>селектор1 + селектор2 {}</mark></code>
         </pre>
         <p class="note">
             <a href="demos/selectors.html">Демонстрация</a>.
@@ -247,7 +261,7 @@
             <code><mark class="comment">/* селектор:псевдокласс {} */</mark></code>
             <code>:active <mark class="comment">/* активный элемент */</mark></code>
             <code>:link, :visited <mark class="comment">/* непосещенные и посещенные ссылки */</mark></code>
-            <code>:hover <mark class="comment">/* элемент, находится под указателем мышки */</mark></code>
+            <code>:hover <mark class="comment">/* элемент, находится под курсором */</mark></code>
             <code>:focus <mark class="comment">/* элемент в фокусе */</mark></code>
             <code>:first-child <mark class="comment">/* первый дочерний элемент */</mark></code>
         </pre>
@@ -259,31 +273,32 @@
     <section class="slide"><div>
         <h2>Каскадирование</h2>
         <ol>
-            <li>Стиль браузера</li>
-            <li>Стиль автора</li>
-            <li>Стиль пользователя</li>
-            <li>Стиль автора с добавлением !important</li>
-            <li>Стиль пользователя с добавлением !important</li>
+            <li>Стиль браузера.</li>
+            <li>Стиль автора.</li>
+            <li>Стиль пользователя.</li>
+            <li>Стиль автора с добавлением <code>!important</code>.</li>
+            <li>Стиль пользователя с добавлением <code>!important</code>.</li>
         </ol>
      </div></section>
 
     <section class="slide"><div>
         <h2>!important</h2>
         <pre>
-            <code>свойство: значение !important;</code>
+            <code>селектор {</code>
+            <code>    свойство: значение !important;</code>
+            <code>}</code>
         </pre>
      </div></section>
 
 
     <section class="slide"><div>
         <h2>Специфичность селекторов</h2>
-        <ul>
-            <li>Кортеж <code>(a, b, c, d)</code></li>
-            <li>Сравнение <code>(a1, b1, c1, d1)</code> ? <code>(a2, b2, c2, d2)</code></li>
-        </ul>
+        <p>Кортеж <code>(a, b, c, d)</code>.</p>
+        <p>
+            <code>(a1, b1, c1, d1)</code> &gt; <code>(a2, b2, c2, d2)</code>, если <code>a1</code> &gt; <code>a2</code> ∨ <code>a1</code> = <code>a1</code> ∧ <code>b1</code> &gt; <code>b2</code> …
+        </p>
         <p class="note">
-            <a href="demos/specificity.html">Демонстрация</a>.<br/>
-            <a href="http://www.w3.org/TR/CSS2/cascade.html#specificity">Спецификация</a>.
+            <a href="demos/specificity.html">Демонстрация</a>.
         </p>
      </div></section>
 
@@ -295,12 +310,36 @@
             <li>Текст (<code>text-decoration</code>, <code>text-align</code>)</li>
             <li>Отображение (<code>display</code>)</li>
             <li>Размеры (Box Model)</li>
-            <li>Расположение (<code>position</code>, <code>float</code>)</li>
+            <li>Позиционирование (<code>position</code>, <code>float</code>)</li>
         </ul>
-        <p class="note">
-            <a href="http://www.w3.org/TR/CSS2/">Спецификация</a>.
-        </p>
      </div></section>
+
+    <section class="slide"><div>
+        <h2><code>font</code></h2>
+        <pre>
+            <code>font-style: normal | italic</code>
+            <code>font-variant: normal | small-caps</code>
+            <code>font-weight: normal | bold</code>
+            <code>font-size: &lt;length&gt; | &lt;percentage&gt;</code>
+            <code>line-height: &lt;number&gt; | &lt;length&gt; | &lt;percentage&gt;</code>
+            <code>font-family:  [ &lt;family-name&gt; | &lt;generic-family&gt; ]# </code>
+        </pre>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2><code>font</code></h2>
+        <pre>
+            <code>font:</code>
+            <code>    [font-style||font-variant||font-weight]</code>
+            <code>    font-size [/line-height] font-family</code>
+        </pre>
+        <pre>
+            <code>h1 {</code>
+            <code>    font: bold 24px/1.5 Tahoma, sans-serif;</code>
+            <code>}</code>
+        </pre>
+     </div></section>
+
 
     <section class="slide"><div>
         <h2><code>display</code></h2>
@@ -309,7 +348,7 @@
             <li>Строчный элемент <code>inline</code></li>
             <li>Строчно-блочный элемент <code>inline-block</code></li>
             <li>Скрытый (временно удаленный) <code>none</code></li>
-            <li>Элемент списка <code>none</code></li>
+            <li>Элемент списка <code>list-item</code></li>
             <li>Табличный элемент <code>table</code>, <code>inline-table</code>, <code>table-cell</code></li>
         </ul>
         <p class="note">
@@ -321,43 +360,37 @@
         <h2>Box Model</h2>
         <img src="pictures/box.png" alt="" style="margin: 0 auto; display: block;" />
         <p class="note">
-            <a href="demos/box.html">Демонстрация</a>.<br/>
-            <a href="http://www.w3.org/TR/CSS2/box.html">http://www.w3.org/TR/CSS2/box.html</a>
+            <a href="demos/box.html">Демонстрация</a>.
         </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2><code>margin</code></h2>
+        <pre>
+            <code>margin-top: &lt;length&gt; | &lt;percentage&gt; | auto</code>
+            <code>margin-right: &lt;length&gt; | &lt;percentage&gt; | auto</code>
+            <code>margin-bottom: &lt;length&gt; | &lt;percentage&gt; | auto</code>
+            <code>margin-left: &lt;length&gt; | &lt;percentage&gt; | auto</code>
+        </pre>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2><code>margin</code></h2>
+        <pre>
+            <code>margin: [ &lt;length&gt; | &lt;percentage&gt; | auto ]{1,4}</code>
+        </pre>
+        <pre>
+            <code>margin: all </code>
+            <code>margin: vertical horizontal</code>
+            <code>margin: top horizontal bottom</code>
+            <code>margin: top right bottom left</code>
+        </pre>
      </div></section>
 
     <section class="slide"><div>
         <h2>Обтекание</h2>
-        <p>Свойство <code>float</code></p>
-        <ul>
-            <li>Отсуствует <code>none</code>
-            <li>Выравает по левому краю <code>left</code></li>
-            <li>Выравает по правому краю <code>left</code></li>
-        </ul>
-        <p class="note">
-            <a href="demos/display.html">Демонстрация</a>.<br/>
-        </p>
-     </div></section>
-
-    <section class="slide"><div>
-        <h2>Позиционирование</h2>
-        <p>Свойство <code>position</code></p>
-        <ul>
-            <li>По умолчанию <code>static</code></li>
-            <li>Относительное <code>relative</code></li>
-            <li>Абсолютное <code>absolute</code></li>
-            <li>Фиксированое <code>fixed</code></li>
-        </ul>
-        <p class="note">
-            <a href="demos/display.html">Демонстрация</a>.<br/>
-        </p>
-     </div></section>
-
-    <section class="slide"><div>
-        <h2>Псевдо-элементы</h2>
-        <p><code>::after</code> и <code>::befor</code></p>
         <pre>
-            <code>селектор::after { content: "текст" }</code>
+            <code>float: left | right | none</code>
         </pre>
         <p class="note">
             <a href="demos/display.html">Демонстрация</a>.<br/>
@@ -365,24 +398,86 @@
      </div></section>
 
     <section class="slide"><div>
-        <h2>Waterfall</h2>
-        <img src="pictures/waterfall.png" alt="" style="margin: 0 auto; display: block;" />
+        <h2>Позиционирование</h2>
+        <pre>
+            <code>position: static | relative | absolute | fixed</code>
+        </pre>
+        <p class="note">
+            <a href="demos/display.html">Демонстрация</a>.<br/>
+        </p>
      </div></section>
 
     <section class="slide"><div>
-        <h2>Независимые блоки</h2>
-        <p></p>
+        <h2>Псевдо-элементы</h2>
+        <p><code>::after</code> и <code>::before</code></p>
+        <pre>
+            <code>селектор::after {</code>
+            <code>    content: "текст";</code>
+            <code>}</code>
+        </pre>
         <p class="note">
-            <a href="http://vitaly.harisov.name/article/independent-blocks.html">http://vitaly.harisov.name/article/independent-blocks.html</a>.<br/>
+            <a href="demos/display.html">Демонстрация</a>.<br/>
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Схема работы браузера</h2>
+        <p>
+            <img src="pictures/flow.png" alt="" style="margin: 4em auto; display: block;" />
+        </p>
+        <p class="note">
+            <a href="http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/">http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/</a>.
+        </p>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Независимые блоки?</h2>
+        <pre>
+            <code>&lt;ul class="menu"&gt;</code>
+            <code>    &lt;li class="item"&gt;</code>
+            <code>        &lt;ul class="submenu"&gt;</code>
+            <code>            &lt;li class="item"&gt;&lt;/li&gt;</code>
+        </pre>
+        <pre>
+            <code>.menu .item {}</code>
+            <code>.submenu .item {}</code>
+        </pre>
+     </div></section>
+
+    <section class="slide"><div>
+        <h2>Независимые блоки!</h2>
+        <pre>
+            <code>&lt;ul class="menu"&gt;</code>
+            <code>    &lt;li class="menu__item"&gt;</code>
+            <code>        &lt;ul class="submenu"&gt;</code>
+            <code>            &lt;li class="submenu__item"&gt;&lt;/li&gt;</code>
+        </pre>
+        <pre>
+            <code>.menu__item {}</code>
+            <code>.submenu__item {}</code>
+        </pre>
+     </div></section>
+
+
+    <section class="slide"><div>
+        <h2>БЭМ</h2>
+        <pre>
+            <code>блок</code>
+            <code>блок__элемент</code>
+            <code>блок_модификатор</code>
+            <code>блок__элемент_модификатор</code>
+        </pre>
+        <p class="note">
+            <a href="http://ru.bem.info/method/definitions/">БЭМ</a>.<br/>
         </p>
      </div></section>
 
     <section class="slide"><div>
         <h2>Что не рассмотрено?</h2>
         <ul>
-            <li>Мультимедия возможностии HTML</li>
-            <li>CSS3: анимации, транзишины, трансорфмации</li>
-            <li>Вендорные префиксы</li>
+            <li>Мультимедия возможностии HTML;</li>
+            <li>CSS-анимации и трансорфмации;</li>
+            <li>Вендорные префиксы.</li>
         </ul>
      </div></section>
 
