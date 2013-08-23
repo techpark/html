@@ -49,14 +49,14 @@ body, input, select, button {
     box-sizing: border-box;
     padding: 2px 4px;
 }
+.form__field-input_size_full {
+    width: 100%;
+}
 .form__field-input_type_text {
     background: #fff;
     border: 2px solid #a3b5b9;
 }
-.form__field-input_size_full {
-    width: 100%;
-}
-.form__field-input:focus {
+.form__field-input_type_text:focus {
     background: #e5f7f0;
 }
 
