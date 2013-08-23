@@ -47,11 +47,11 @@ body, input, select, button {
 
 .form__field-input {
     box-sizing: border-box;
-    background: #fff;
     box-sizing: border-box;
     padding: 2px 4px;
 }
 .form__field-input_type_text {
+    background: #fff;
     border: 2px solid #a3b5b9;
 }
 .form__field-input_size_full {
